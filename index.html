@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Assistant Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header .lang-switcher {
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        header .lang-switcher button {
+            background-color: #444;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+
+        header .lang-switcher button:hover {
+            background-color: #555;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h1, section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style-type: none;
+            margin-bottom: 30px;
+        }
+
+        section ul li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="lang-switcher">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('es')">Español</button>
+            <button onclick="changeLanguage('pt')">Português</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1 class="section-title">Welcome to Your Personal Assistant Service</h1>
+        <p class="description">Transform your daily life with our professional assistant services. We help you focus on what matters the most!</p>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <ul>
+            <li>Scheduling appointments</li>
+            <li>Travel management</li>
+            <li>Task management</li>
+            <li>Event planning</li>
+        </ul>
+    </section>
+
+    <section id="benefits">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <ul>
+            <li>Save time</li>
+            <li>Reduce stress</li>
+            <li>24/7 availability</li>
+            <li>Tailored to your needs</li>
+        </ul>
+    </section>
+
+    <section id="features">
+        <h2 class="section-title">Key Features</h2>
+        <ul>
+            <li>AI-powered assistance</li>
+            <li>Seamless integration with your devices</li>
+            <li>Personalized recommendations</li>
+            <li>High-level security</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p>"This service has made my life so much easier!" - Jane Doe</p>
+        <p>"Highly recommend! Truly professional." - John Smith</p>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: contact@personalassistant.com</p>
+        <p>Phone: +1 123 456 7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Personal Assistant Services</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                welcome: "Welcome to Your Personal Assistant Service",
+                description: "Transform your daily life with our professional assistant services. We help you focus on what matters the most!",
+                servicesTitle: "Our Services",
+                services: ["Scheduling appointments", "Travel management", "Task management", "Event planning"],
+                benefitsTitle: "Why Choose Us?",
+                benefits: ["Save time", "Reduce stress", "24/7 availability", "Tailored to your needs"],
+                featuresTitle: "Key Features",
+                features: ["AI-powered assistance", "Seamless integration with your devices", "Personalized recommendations", "High-level security"],
+                testimonialsTitle: "What Our Clients Say",
+                testimonials: ["'This service has made my life so much easier!' - Jane Doe", "'Highly recommend! Truly professional.' - John Smith"],
+                contactTitle: "Contact Us",
+                email: "Email: contact@personalassistant.com",
+                phone: "Phone: +1 123 456 7890",
+            },
+            es: {
+                welcome: "Bienvenido a nuestro Servicio de Asistente Personal",
+                description: "Transforma tu vida diaria con nuestros servicios de asistente personal. ¡Te ayudamos a enfocarte en lo que realmente importa!",
+                servicesTitle: "Nuestros Servicios",
+                services: ["Programación de citas", "Gestión de viajes", "Gestión de tareas", "Planificación de eventos"],
+                benefitsTitle: "¿Por qué elegirnos?",
+                benefits: ["Ahorra tiempo", "Reduce el estrés", "Disponibilidad 24/7", "Adaptado a tus necesidades"],
+                featuresTitle: "Características Clave",
+                features: ["Asistencia potenciada por IA", "Integración sin interrupciones con tus dispositivos", "Recomendaciones personalizadas", "Seguridad de alto nivel"],
+                testimonialsTitle: "Lo que dicen nuestros clientes",
+                testimonials: ["'¡Este servicio ha hecho mi vida mucho más fácil!' - Jane Doe", "'¡Altamente recomendado! Verdaderamente profesional.' - John Smith"],
+                contactTitle: "Contáctanos",
+                email: "Correo electrónico: contacto@asistentepersonal.com",
+                phone: "Teléfono: +1 123 456 7890",
+            },
+            pt: {
+                welcome: "Bem-vindo ao Serviço de Assistente Pessoal",
+                description: "Transforme sua vida diária com nossos serviços profissionais de assistente pessoal. Ajudamos você a se concentrar no que realmente importa!",
+                servicesTitle: "Nossos Serviços",
+                services: ["Agendamento de compromissos", "Gestão de viagens", "Gestão de tarefas", "Planejamento de eventos"],
+                benefitsTitle: "Por que nos escolher?",
+                benefits: ["Economize tempo", "Reduza o estresse", "Disponibilidade 24/7", "Personalizado para suas necessidades"],
+                featuresTitle: "Características Principais",
+                features: ["Assistência com IA", "Integração perfeita com seus dispositivos", "Recomendações personalizadas", "Alta segurança"],
+                testimonialsTitle: "O que nossos clientes dizem",
+                testimonials: ["'Este serviço tornou minha vida muito mais fácil!' - Jane Doe", "'Altamente recomendável! Verdadeiramente profissional.' - John Smith"],
+                contactTitle: "Contate-nos",
+                email: "E-mail: contato@assistente.com",
+                phone: "Telefone: +1 123 456 7890",
+            }
+        };
+
+        function changeLanguage(lang) {
+            const trans = translations[lang];
+            document.querySelector("#home .section-title").textContent = trans.welcome;
+            document.querySelector("#home .description").textContent = trans.description;
+            document.querySelector("#services .section-title").textContent = trans.servicesTitle;
+            document.querySelector("#services ul").innerHTML = trans.services.map(service => `<li>${service}</li>`).join('');
+            document.querySelector("#benefits .section-title").textContent = trans.benefitsTitle;
+            document.querySelector("#benefits ul").innerHTML = trans.benefits.map(benefit => `<li>${benefit}</li>`).join('');
+            document.querySelector("#features .section-title").textContent = trans.featuresTitle;
+            document.querySelector("#features ul").innerHTML = trans.features.map(feature => `<li>${feature}</li>`).join('');
+            document.querySelector("#testimonials .section-title").textContent = trans.testimonialsTitle;
+            document.querySelector("#testimonials").innerHTML += trans.testimonials.map(testimonial => `<p>${testimonial}</p>`).join('');
+            document.querySelector("#contact .section-title").textContent = trans.contactTitle;
+            document.querySelector("#contact p:first-child").textContent = trans.email;
+            document.querySelector("#contact p:last-child").textContent = trans.phone;
+        }
+    </script>
+</body>
+</html>
