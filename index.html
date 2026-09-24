@@ -1,391 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Personal Assistant Services - Professional Solutions</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --text-color: #333;
-            --light-bg: #f8f9fa;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--light-bg);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .lang-switcher {
-            text-align: right;
-            margin-bottom: 1rem;
-        }
-
-        .lang-switcher button {
-            background-color: transparent;
-            border: 1px solid white;
-            color: white;
-            padding: 8px 16px;
-            cursor: pointer;
-            margin: 0 5px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .lang-switcher button:hover {
-            background-color: white;
-            color: var(--primary-color);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            gap: 2rem;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: var(--secondary-color);
-        }
-
-        main {
-            margin-top: 120px;
-        }
-
-        section {
-            padding: 4rem 0;
-            scroll-margin-top: 120px;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .description {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            text-align: center;
-        }
-
-        .services-grid, .benefits-grid, .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .service-card, .benefit-card, .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover, .benefit-card:hover, .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .testimonials-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        .testimonial-author {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .contact-info {
-            text-align: center;
-            font-size: 1.2rem;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .social-links a {
-            color: var(--primary-color);
-            font-size: 2rem;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: var(--secondary-color);
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 4rem;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aria — Your AI Personal Assistant · Free template</title>
+  <meta name="description" content="Free landing page template for an AI personal assistant service: scheduling, travel, tasks and events. Trilingual EN/ES/PT. MIT license.">
+  <meta name="theme-color" content="#f7f8ff">
+  <meta property="og:title" content="Aria — AI Personal Assistant · Free template">
+  <meta property="og:description" content="Free trilingual landing page for a personal assistant service.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="lang-switcher">
-                <button onclick="changeLanguage('en')">English</button>
-                <button onclick="changeLanguage('es')">Español</button>
-                <button onclick="changeLanguage('pt')">Português</button>
+<body id="home">
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <div class="free-bar">
+    <div class="container">
+      <span><b>FREE TEMPLATE</b> <span data-i18n="freeBar">AI assistant landing — 100% free</span> <span class="license">· MIT</span></span>
+      <a href="https://github.com/EduGuate/LandingPage_PersonalAssistant" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> <span data-i18n="freeRepo">View on GitHub</span></a>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <nav class="navbar navbar-expand-lg" aria-label="Main">
+      <div class="container">
+        <a class="brand" href="#home"><span class="brand-orb" aria-hidden="true"></span><b>aria</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu"><i class="bi bi-list"></i></button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#services" data-i18n="navServices">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#benefits" data-i18n="navBenefits">Benefits</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features" data-i18n="navFeatures">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials" data-i18n="navTestimonials">Testimonials</a></li>
+          </ul>
+          <div class="nav-actions">
+            <div class="lang" role="group" aria-label="Language">
+              <button type="button" data-lang="en">EN</button><button type="button" data-lang="es">ES</button><button type="button" data-lang="pt">PT</button>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <a class="btn-main btn-sm-main" href="#contact" data-i18n="navCta">Get started</a>
+          </div>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section id="home">
-            <div class="container">
-                <h1 class="section-title">Welcome to Your Personal Assistant Service</h1>
-                <p class="description">Transform your daily life with our professional assistant services. We help you focus on what matters the most!</p>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 hero-copy">
+            <p class="badge-soft"><i class="bi bi-stars"></i> <span data-i18n="heroBadge">AI + human assistants, 24/7</span></p>
+            <h1 data-i18n-html="heroTitle">Your day, <span class="grad">handled.</span></h1>
+            <p class="lead-text" data-i18n="heroDesc">Transform your daily life with our professional assistant services. We help you focus on what matters the most!</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn-main" href="#contact"><span data-i18n="heroCta">Start free trial</span> <i class="bi bi-arrow-right"></i></a>
+              <a class="btn-ghost" href="#how"><i class="bi bi-play-circle"></i> <span data-i18n="heroCta2">How it works</span></a>
             </div>
-        </section>
-
-        <section id="services">
-            <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <i class="fas fa-calendar fa-2x"></i>
-                        <h3>Scheduling</h3>
-                        <p>Professional appointment management</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-plane fa-2x"></i>
-                        <h3>Travel Management</h3>
-                        <p>Comprehensive travel planning</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-tasks fa-2x"></i>
-                        <h3>Task Management</h3>
-                        <p>Efficient task organization</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-calendar-check fa-2x"></i>
-                        <h3>Event Planning</h3>
-                        <p>Complete event coordination</p>
-                    </div>
-                </div>
+            <div class="trust">
+              <div class="faces" aria-hidden="true"><span style="--c:#2563eb">JD</span><span style="--c:#7c3aed">JS</span><span style="--c:#ec4899">MR</span><span style="--c:#0ea5e9">AL</span></div>
+              <p><b>4.9</b> <span class="stars" aria-hidden="true">★★★★★</span><br><span data-i18n="trust">from 2,000+ busy professionals</span></p>
             </div>
-        </section>
-
-        <section id="benefits">
-            <div class="container">
-                <h2 class="section-title">Why Choose Us?</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <i class="fas fa-clock fa-2x"></i>
-                        <h3>Save Time</h3>
-                        <p>Focus on what matters most to you</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fas fa-heart fa-2x"></i>
-                        <h3>Reduce Stress</h3>
-                        <p>Let us handle the details</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fas fa-infinity fa-2x"></i>
-                        <h3>24/7 Availability</h3>
-                        <p>Always here when you need us</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fas fa-user-check fa-2x"></i>
-                        <h3>Personalized Service</h3>
-                        <p>Tailored to your specific needs</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="stage">
+              <div class="orb" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="chat" aria-label="Assistant demo conversation">
+                <div class="chat-head"><span class="brand-orb sm" aria-hidden="true"></span><div><b>Aria</b><small><span class="live"></span> <span data-i18n="online">online · replies in seconds</span></small></div></div>
+                <div class="chat-body" id="chat" aria-live="polite"></div>
+                <div class="chat-input" aria-hidden="true"><span data-i18n="typeHere">Ask Aria anything…</span><i class="bi bi-send-fill"></i></div>
+              </div>
+              <div class="float-chip c1"><i class="bi bi-calendar-check"></i> <span data-i18n="chip1">Meeting booked</span></div>
+              <div class="float-chip c2"><i class="bi bi-airplane"></i> <span data-i18n="chip2">Flight + hotel ready</span></div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="features">
-            <div class="container">
-                <h2 class="section-title">Key Features</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-robot fa-2x"></i>
-                        <h3>AI-Powered</h3>
-                        <p>Advanced AI assistance</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-mobile-alt fa-2x"></i>
-                        <h3>Device Integration</h3>
-                        <p>Seamless connectivity</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-chart-line fa-2x"></i>
-                        <h3>Smart Recommendations</h3>
-                        <p>Personalized suggestions</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-shield-alt fa-2x"></i>
-                        <h3>Security</h3>
-                        <p>Enterprise-grade protection</p>
-                    </div>
-                </div>
+    <!-- PROBLEM -->
+    <section class="section problem">
+      <div class="container">
+        <div class="problem-card reveal">
+          <p class="eyebrow" data-i18n="probEyebrow">The problem</p>
+          <h2 data-i18n-html="probTitle">You spend <span class="grad">4.5 hours a day</span> on tasks someone else could do.</h2>
+          <div class="row g-3 mt-3">
+            <div class="col-md-4"><div class="pstat"><b><span data-count="62">0</span>%</b><span data-i18n="p1">of the workweek goes to admin work</span></div></div>
+            <div class="col-md-4"><div class="pstat"><b><span data-count="28">0</span></b><span data-i18n="p2">emails a day just to schedule meetings</span></div></div>
+            <div class="col-md-4"><div class="pstat"><b><span data-count="3">0</span>×</b><span data-i18n="p3">more stress when travel goes wrong</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow" data-i18n="servEyebrow">Our services</p><h2 data-i18n="servicesTitle">Our Services</h2></div>
+        <div class="bento">
+          <article class="svc big reveal" style="--c:#2563eb"><span class="svc-icon"><i class="bi bi-calendar2-week"></i></span><h3 data-i18n="s1">Scheduling</h3><p data-i18n="s1d">Professional appointment management</p>
+            <div class="cal" aria-hidden="true"><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i class="hot"></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></div></article>
+          <article class="svc reveal" style="--c:#7c3aed"><span class="svc-icon"><i class="bi bi-airplane-engines"></i></span><h3 data-i18n="s2">Travel Management</h3><p data-i18n="s2d">Comprehensive travel planning</p></article>
+          <article class="svc reveal" style="--c:#ec4899"><span class="svc-icon"><i class="bi bi-check2-square"></i></span><h3 data-i18n="s3">Task Management</h3><p data-i18n="s3d">Efficient task organization</p></article>
+          <article class="svc wide reveal" style="--c:#0ea5e9"><span class="svc-icon"><i class="bi bi-balloon-heart"></i></span><div><h3 data-i18n="s4">Event Planning</h3><p data-i18n="s4d">Complete event coordination</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="section how">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow" data-i18n="howEyebrow">How it works</p><h2 data-i18n="howTitle">Three steps to a lighter day</h2></div>
+        <ol class="steps reveal">
+          <li><span>1</span><h3 data-i18n="h1">Tell us what you need</h3><p data-i18n="h1d">Chat, email or voice — however you like.</p></li>
+          <li><span>2</span><h3 data-i18n="h2">Aria gets to work</h3><p data-i18n="h2d">AI drafts, a human assistant reviews.</p></li>
+          <li><span>3</span><h3 data-i18n="h3">You get it done</h3><p data-i18n="h3d">Confirmations land in your calendar and inbox.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="benefits" class="section">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-5 reveal"><p class="eyebrow" data-i18n="benEyebrow">Why Aria</p><h2 data-i18n="benefitsTitle">Why Choose Us?</h2><p class="muted" data-i18n="benDesc">More time for the work and people that matter. Less time on logistics.</p></div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6 reveal"><div class="ben"><i class="bi bi-hourglass-split"></i><h3 data-i18n="b1">Save Time</h3><p data-i18n="b1d">Focus on what matters most to you</p></div></div>
+              <div class="col-sm-6 reveal"><div class="ben"><i class="bi bi-emoji-smile"></i><h3 data-i18n="b2">Reduce Stress</h3><p data-i18n="b2d">Let us handle the details</p></div></div>
+              <div class="col-sm-6 reveal"><div class="ben"><i class="bi bi-moon-stars"></i><h3 data-i18n="b3">24/7 Availability</h3><p data-i18n="b3d">Always here when you need us</p></div></div>
+              <div class="col-sm-6 reveal"><div class="ben"><i class="bi bi-person-heart"></i><h3 data-i18n="b4">Personalized Service</h3><p data-i18n="b4d">Tailored to your specific needs</p></div></div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="testimonials">
-            <div class="container">
-                <h2 class="section-title">What Our Clients Say</h2>
-                <div class="testimonials-container">
-                    <div class="testimonial-card">
-                        <p class="testimonial-text">"This service has made my life so much easier!"</p>
-                        <p class="testimonial-author">- Jane Doe</p>
-                    </div>
-                    <div class="testimonial-card">
-                        <p class="testimonial-text">"Highly recommend! Truly professional."</p>
-                        <p class="testimonial-author">- John Smith</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- FEATURES -->
+    <section id="features" class="section features">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow light" data-i18n="featEyebrow">Under the hood</p><h2 data-i18n="featuresTitle">Key Features</h2></div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-3 reveal"><div class="feat"><i class="bi bi-cpu"></i><h3 data-i18n="f1">AI-Powered</h3><p data-i18n="f1d">Advanced AI assistance</p></div></div>
+          <div class="col-sm-6 col-lg-3 reveal"><div class="feat"><i class="bi bi-phone"></i><h3 data-i18n="f2">Device Integration</h3><p data-i18n="f2d">Seamless connectivity</p></div></div>
+          <div class="col-sm-6 col-lg-3 reveal"><div class="feat"><i class="bi bi-lightbulb"></i><h3 data-i18n="f3">Smart Recommendations</h3><p data-i18n="f3d">Personalized suggestions</p></div></div>
+          <div class="col-sm-6 col-lg-3 reveal"><div class="feat"><i class="bi bi-shield-lock"></i><h3 data-i18n="f4">Security</h3><p data-i18n="f4d">Enterprise-grade protection</p></div></div>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title">Contact Us</h2>
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> Email: devlewiso@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> Phone: +1 123 456 7890</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/devlewiso" target="_blank" title="LinkedIn Profile">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:devlewiso@gmail.com" title="Send Email">
-                            <i class="fas fa-envelope-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow" data-i18n="testEyebrow">Social proof</p><h2 data-i18n="testimonialsTitle">What Our Clients Say</h2></div>
+        <div class="carousel-x reveal" id="tcar" aria-roledescription="carousel">
+          <div class="slides">
+            <figure class="slide" aria-roledescription="slide"><blockquote data-i18n="t1">“This service has made my life so much easier!”</blockquote><figcaption><span class="av" style="--c:#2563eb">JD</span><span><b>Jane Doe</b><small data-i18n="t1r">Founder, design studio</small></span></figcaption></figure>
+            <figure class="slide" aria-roledescription="slide"><blockquote data-i18n="t2">“Highly recommend! Truly professional.”</blockquote><figcaption><span class="av" style="--c:#7c3aed">JS</span><span><b>John Smith</b><small data-i18n="t2r">Sales director</small></span></figcaption></figure>
+            <figure class="slide" aria-roledescription="slide"><blockquote data-i18n="t3">“My calendar finally makes sense. I got my evenings back.”</blockquote><figcaption><span class="av" style="--c:#ec4899">MR</span><span><b>María Ruiz</b><small data-i18n="t3r">Physician</small></span></figcaption></figure>
+          </div>
+          <div class="car-ctrl">
+            <button type="button" id="tprev" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+            <span id="tpos" aria-live="polite">1 / 3</span>
+            <button type="button" id="tpause" aria-label="Pause"><i class="bi bi-pause-fill"></i></button>
+            <button type="button" id="tnext" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Personal Assistant Services. All rights reserved.</p>
-    </footer>
+    <!-- CONTACT -->
+    <section id="contact" class="section pt-0">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="orb small" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="eyebrow light" data-i18n="ctaEyebrow">Let's talk</p>
+          <h2 data-i18n="contactTitle">Contact Us</h2>
+          <p data-i18n="ctaDesc">Tell us about your day. We'll show you how much of it Aria can take off your plate.</p>
+          <div class="contact-grid">
+            <a href="mailto:devlewiso@gmail.com"><i class="bi bi-envelope"></i><span><small data-i18n="cEmail">Email</small>devlewiso@gmail.com</span></a>
+            <a href="tel:+11234567890"><i class="bi bi-telephone"></i><span><small data-i18n="cPhone">Phone</small>+1 123 456 7890</span></a>
+            <a href="https://linkedin.com/in/devlewiso" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i><span><small>LinkedIn</small>/in/devlewiso</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        const translations = {
-            en: {
-                welcome: "Welcome to Your Personal Assistant Service",
-                description: "Transform your daily life with our professional assistant services. We help you focus on what matters the most!",
-                servicesTitle: "Our Services",
-                benefitsTitle: "Why Choose Us?",
-                featuresTitle: "Key Features",
-                testimonialsTitle: "What Our Clients Say",
-                contactTitle: "Contact Us",
-            },
-            es: {
-                welcome: "Bienvenido a nuestro Servicio de Asistente Personal",
-                description: "Transforma tu vida diaria con nuestros servicios de asistente personal. ¡Te ayudamos a enfocarte en lo que realmente importa!",
-                servicesTitle: "Nuestros Servicios",
-                benefitsTitle: "¿Por qué elegirnos?",
-                featuresTitle: "Características Clave",
-                testimonialsTitle: "Lo que dicen nuestros clientes",
-                contactTitle: "Contáctanos",
-            },
-            pt: {
-                welcome: "Bem-vindo ao Serviço de Assistente Pessoal",
-                description: "Transforme sua vida diária com nossos serviços profissionais de assistente pessoal. Ajudamos você a se concentrar no que realmente importa!",
-                servicesTitle: "Nossos Serviços",
-                benefitsTitle: "Por que nos escolher?",
-                featuresTitle: "Características Principais",
-                testimonialsTitle: "O que nossos clientes dizem",
-                contactTitle: "Contate-nos",
-            }
-        };
+    <!-- FREE TEMPLATE -->
+    <section id="template" class="section pt-0">
+      <div class="container">
+        <div class="opensource reveal">
+          <div><span class="free-pill">FREE &amp; OPEN SOURCE</span><h2 data-i18n="osTitle">Launch your assistant service. Free.</h2><p class="muted" data-i18n="osDesc">Aria is a free Bootstrap 5 landing template in English, Spanish and Portuguese. Responsive, animated and MIT licensed.</p></div>
+          <a class="btn-main" href="https://github.com/EduGuate/LandingPage_PersonalAssistant" target="_blank" rel="noopener noreferrer"><span data-i18n="osBtn">Download on GitHub</span> <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        function changeLanguage(lang) {
-            const trans = translations[lang];
-            document.querySelector("#home .section-title").textContent = trans.welcome;
-            document.querySelector("#home .description").textContent = trans.description;
-            document.querySelector("#services .section-title").textContent = trans.servicesTitle;
-            document.querySelector("#benefits .section-title").textContent = trans.benefitsTitle;
-            document.querySelector("#features .section-title").textContent = trans.featuresTitle;
-            document.querySelector("#testimonials .section-title").textContent = trans.testimonialsTitle;
-            document.querySelector("#contact .section-title").textContent = trans.contactTitle;
-        }
-    </script>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Aria · <span data-i18n="rights">Personal Assistant Services. Demo template.</span></span>
+      <span class="footer-links"><a href="#template">FREE TEMPLATE ↗</a><a href="LICENSE">MIT</a><a href="#home" data-i18n="top">Back to top ↑</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
