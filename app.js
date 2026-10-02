@@ -30,7 +30,7 @@
       ctaEyebrow: "Let's talk", contactTitle: 'Contact Us', ctaDesc: "Tell us about your day. We'll show you how much of it Aria can take off your plate.",
       cEmail: 'Email', cPhone: 'Phone',
       osTitle: 'Launch your assistant service. Free.', osDesc: 'Aria is a free Bootstrap 5 landing template in English, Spanish and Portuguese. Responsive, animated and MIT licensed.', osBtn: 'Download on GitHub',
-      rights: 'Personal Assistant Services. Demo template.', top: 'Back to top ↑',
+      rights: 'Personal Assistant Services. Demo template.', top: 'Back to top ↑', privacy: 'Privacy', terms: 'Terms',
       prev: 'Previous', next: 'Next', pause: 'Pause', play: 'Play',
       chat: [
         ['me', 'Move my 3pm with Laura to tomorrow and book a table for 4 tonight 🍝'],
@@ -67,7 +67,7 @@
       ctaEyebrow: 'Hablemos', contactTitle: 'Contáctanos', ctaDesc: 'Cuéntanos cómo es tu día. Te mostraremos cuánto de él puede resolver Aria por ti.',
       cEmail: 'Correo', cPhone: 'Teléfono',
       osTitle: 'Lanza tu servicio de asistente. Gratis.', osDesc: 'Aria es una plantilla gratuita en Bootstrap 5 en inglés, español y portugués. Responsive, animada y con licencia MIT.', osBtn: 'Descargar en GitHub',
-      rights: 'Servicios de Asistente Personal. Plantilla de demostración.', top: 'Volver arriba ↑',
+      rights: 'Servicios de Asistente Personal. Plantilla de demostración.', top: 'Volver arriba ↑', privacy: 'Privacidad', terms: 'Términos',
       prev: 'Anterior', next: 'Siguiente', pause: 'Pausar', play: 'Reproducir',
       chat: [
         ['me', 'Pasa mi reunión de las 3 con Laura a mañana y reserva mesa para 4 esta noche 🍝'],
@@ -104,7 +104,7 @@
       ctaEyebrow: 'Vamos conversar', contactTitle: 'Contate-nos', ctaDesc: 'Conte como é o seu dia. Mostraremos quanto dele a Aria pode resolver por você.',
       cEmail: 'E-mail', cPhone: 'Telefone',
       osTitle: 'Lance seu serviço de assistente. Grátis.', osDesc: 'Aria é um template gratuito em Bootstrap 5 em inglês, espanhol e português. Responsivo, animado e com licença MIT.', osBtn: 'Baixar no GitHub',
-      rights: 'Serviços de Assistente Pessoal. Template de demonstração.', top: 'Voltar ao topo ↑',
+      rights: 'Serviços de Assistente Pessoal. Template de demonstração.', top: 'Voltar ao topo ↑', privacy: 'Privacidade', terms: 'Termos',
       prev: 'Anterior', next: 'Próximo', pause: 'Pausar', play: 'Reproduzir',
       chat: [
         ['me', 'Passe minha reunião das 15h com a Laura para amanhã e reserve mesa para 4 hoje à noite 🍝'],
